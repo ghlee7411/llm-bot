@@ -1,4 +1,6 @@
 # llm-bot
+## open-recipe-data vector store
+- Original source of data: [Open Recipe Data](https://github.com/jakevdp/open-recipe-data), note that the data is converted to JSONL format.
 ## Open AI Multi Functions Bot
 ### Test case: World War III
 ```
