@@ -187,29 +187,33 @@ A[Preheat oven to 425°F] --> B[Place pizza on baking sheet or pizza stone]
 B --> C[Bake for 15-20 minutes]
 C --> D[Crust is golden brown and cheese is melted and bubbly]
 
-Observation: ```mermaid
+Observation: 
+
+mermaid
 graph LR
 A[Preheat oven to 425°F] --> B[Place pizza on baking sheet or pizza stone]
 B --> C[Bake for 15-20 minutes]
 C --> D[Crust is golden brown and cheese is melted and bubbly]
-```
+
+
 Thought:I now know the final answer
 Final Answer: To cook a pizza, preheat your oven to 425°F. Place the pizza on a baking sheet or pizza stone and bake for 15-20 minutes, or until the crust is golden brown and the cheese is melted and bubbly. Here is a diagram illustrating the process:
 
-```mermaid
+mermaid
 graph LR
 A[Preheat oven to 425°F] --> B[Place pizza on baking sheet or pizza stone]
 B --> C[Bake for 15-20 minutes]
 C --> D[Crust is golden brown and cheese is melted and bubbly]
-```
+
 
 > Finished chain.
 [Output]
 To cook a pizza, preheat your oven to 425°F. Place the pizza on a baking sheet or pizza stone and bake for 15-20 minutes, or until the crust is golden brown and the cheese is melted and bubbly. Here is a diagram illustrating the process:
 
-```mermaid
+mermaid
 graph LR
 A[Preheat oven to 425°F] --> B[Place pizza on baking sheet or pizza stone]
 B --> C[Bake for 15-20 minutes]
 C --> D[Crust is golden brown and cheese is melted and bubbly]
+
 ```
