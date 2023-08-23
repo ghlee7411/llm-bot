@@ -5,4 +5,5 @@ temp/
 .chroma/
 *.json
 *.jsonl
-*_chorma/
+*_chroma/
+*.zip

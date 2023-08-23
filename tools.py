@@ -1,7 +1,27 @@
 from langchain.llms import OpenAI
 from dotenv import load_dotenv
+from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain.vectorstores import Chroma
 load_dotenv(verbose=True, override=True)
 del load_dotenv
+
+
+def recipe_search_engine(input: str):
+    """Recipe Search Engine. Ask any question and get the answer."""
+    embeddings = OpenAIEmbeddings()
+    db = Chroma(
+        persist_directory='recipe_items_chroma', 
+        embedding_function=embeddings
+    )
+    documents = db.search(input, search_type='similarity', k=3)
+    output = ''
+    for document in documents:
+        content = document.page_content
+        # pretty json
+        content = content.replace('},', '},\n')
+        output += content
+
+    return output
 
 
 def mermaid(input: str):

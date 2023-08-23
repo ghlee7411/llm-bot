@@ -64,7 +64,7 @@ def main():
     # Warning!! This will take a long time. Cost expensive tasks.
 
     # Initialize Chroma from persisted directory (VectorStore)
-    db = Chroma(persist_directory='recipe_items_chorma', embedding_function=embeddings)
+    db = Chroma(persist_directory='recipe_items_chroma', embedding_function=embeddings)
 
     for batch in tqdm(recipe_items, total=len(recipe_items), desc='recipe_items to db'):
         # print(recipe_item)
